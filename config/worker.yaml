@@ -1,0 +1,8 @@
+[locust run]
+host: http://espresso-b2bbatch.dev.dunzo.com
+locustfile: register_runner_script/execute_api.py
+
+[locust worker mode]
+worker: true
+master-host: 127.0.0.1
+master-port: 5557

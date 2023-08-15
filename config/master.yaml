@@ -1,0 +1,11 @@
+[locust run]
+host: http://espresso-b2bbatch.dev.dunzo.com
+locustfile: register_runner_script/execute_api.py
+
+[locust master mode]
+master: true
+expect-workers: 2
+
+[headless mode]
+headless: true
+users: 5

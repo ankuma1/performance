@@ -1,0 +1,11 @@
+[locust run]
+host: http://espresso-b2bbatch.dev.dunzo.com
+locustfile: register_runner_script/execute_api.py
+
+[headless mode]
+headless: true
+users: 5
+
+[logging]
+logfile : /Users/anilkumar/PycharmProjects/Demo_Locust_Project/logfiles/myLatestLog.log
+loglevel : CRITICAL,INFO

@@ -1,0 +1,17 @@
+[locust run]
+locustfile : locust_multiple_user_csv2.py
+host : https://demo.borland.com
+
+[locust master mode]
+master: true
+expect-workers: 2
+
+[headless mode]
+headless: true
+users: 10
+hatch-rate: 1
+run-time: 60s
+
+[logging]
+logfile : /Users/anilkumar/PycharmProjects/Demo_Locust_Project/logfiles/myLatestLog.log
+loglevel : INFO

@@ -1,0 +1,12 @@
+[locust run]
+locustfile : locust_multiple_user_csv2.py
+host : https://demo.borland.com
+
+[locust worker mode]
+worker: true
+master-host : 127.0.0.1
+master-port : 5557
+
+[logging]
+logfile : /Users/anilkumar/PycharmProjects/Demo_Locust_Project/logfiles/myLatestLog.log
+loglevel : INFO
